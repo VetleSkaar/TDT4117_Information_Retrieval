@@ -42,6 +42,8 @@ services:
       - 8888:8888
     networks: ['stack']
     command: start-notebook.sh
+    volumes:
+      - ./:/host
 
 
 networks: {stack: {}}
